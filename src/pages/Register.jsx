@@ -53,7 +53,7 @@ export default function Register() {
 
         {error && <p className="error">{error}</p>}
 
-        <form className="stack" onSubmit={handleSubmit}>
+        <form className="stack" onSubmit={handleSubmit} noValidate>
           <div className="stack">
             <label htmlFor="username">Username</label>
             <input
