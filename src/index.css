@@ -296,3 +296,8 @@ button.danger:hover:not(:disabled) {
     color: #cbd5e1;
   }
 }
+
+.writeup-content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

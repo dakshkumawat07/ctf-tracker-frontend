@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
+import ChallengeDetail from './pages/ChallengeDetail.jsx';
+import EventDetail from './pages/EventDetail.jsx';
 import EventForm from './pages/EventForm.jsx';
 import EventList from './pages/EventList.jsx';
 import Login from './pages/Login.jsx';
@@ -17,7 +19,9 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/events" element={<EventList />} />
           <Route path="/events/new" element={<EventForm />} />
+          <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/events/:id/edit" element={<EventForm />} />
+          <Route path="/challenges/:id" element={<ChallengeDetail />} />
         </Route>
       </Route>
 
